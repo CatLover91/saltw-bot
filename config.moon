@@ -2,44 +2,27 @@ config = require "lapis.config"
 
 config "test", ->
   postgres {
-    database: "saltw_test"
+    database: "datnew_test"
   }
-
-config "twitch", ->
-  host "irc.chat.twitch.tv"
-  prot "6667"
-  name "bladder_x"
-  channels { "#moonscript" }
-  extensions { }
-  oauth_token require "pass"
-  twitch true
-
-  extensions {
-    "speak"
-    "scramble_vim"
-    "midi"
-  }
-
 
 config "development", ->
   join_delay 2
 
   host "localhost"
-  name "bladder_x"
+  name "temp_name"
 
-  channels { "#leafo" }
+  channels { "#datnew" }
 
   admin_password "admin"
 
   extensions {
     "url_titles"
     "admin"
-    "ipb_forum"
     "stats"
   }
 
   postgres {
-    database: "saltw"
+    database: "datnew"
   }
 
   systemd {

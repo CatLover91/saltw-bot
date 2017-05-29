@@ -10,12 +10,12 @@ lint:
 
 test_db:
 	tup
-	-dropdb -U postgres saltw_test
-	createdb -U postgres saltw_test
+	-dropdb -U postgres datnew_test
+	createdb -U postgres datnew_test
 	lapis migrate test
 
 init_db: 
 	tup
-	-dropdb -U postgres saltw
-	createdb -U postgres saltw
+	-dropdb -U postgres datnew
+	createdb -U postgres datnew
 	lapis migrate

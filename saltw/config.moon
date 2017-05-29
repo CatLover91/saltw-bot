@@ -1,7 +1,7 @@
 config = require("lapis.config").get!
 
 DEFAULT_CONFIG = {
-  name: 'bladder_x'
+  name: 'temp_name'
   reconnect_time: 15
 
   message_prefix: 'New ', -- used for New reply, New post

@@ -36,7 +36,7 @@ class Speak extends require  "saltw.extension"
     @irc\on "irc.message", @\message_handler
 
   message_handler: (e, irc, name, channel, message) =>
-    return if message\match "^!"
+    return if message\match "^."
 
     if last_person != name
       message = "#{name} says #{message}"

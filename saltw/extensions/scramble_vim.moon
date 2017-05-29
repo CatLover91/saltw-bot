@@ -9,7 +9,7 @@ class Speak extends require  "saltw.extension"
     @irc\on "irc.message", @\message_handler
 
   message_handler: (e, irc, name, channel, message) =>
-    return unless message == "!vim"
+    return unless message == ".vim"
 
     fonts = {
       "Perfect DOS VGA 437 16"
